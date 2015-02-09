@@ -78,17 +78,17 @@ a.navlist:hover, a.navlist:active {
 }
 
 body {
-	min-height: 550px;
-	padding-top: 50px;
-	font-size: 16px;
-	color:darkred;
-	text-shadow: 1px 1px darkred;
-	font-family:'fontinregular';
-        background-image:url("../bg/BG0.jpg");
-	background-size:100% auto;
-	background-color:black;
-	background-repeat: no-repeat;
-	background-position: center 100px;
+    min-height: 550px;
+    padding-top: 50px;
+    font-size: 16px;
+    color:darkred;
+    text-shadow: 1px 1px darkred;
+    font-family:'fontinregular';
+    background-image:url("../bg/BG0.jpg");
+    background-size:100% auto;
+    background-color:black;
+    background-repeat: no-repeat;
+    background-position: center 100px;
 }
 
 .right-container {
@@ -105,3 +105,29 @@ body {
     -moz-box-shadow: 0px 0px 7px 2px rgba(255,255,255,1);
     box-shadow: 0px 0px 7px 2px rgba(255,255,255,1);
 }
+
+
+/* Not working
+#crossfade {
+    position:relative;
+    //height:281px;
+    //width:450px;
+    //margin:0 auto;
+}
+#crossfade img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#crossfade img.transparent {
+    opacity:0;
+}
+
+#crossfade_onclick {
+    cursor:pointer;
+}
+*/
