@@ -22,17 +22,18 @@ function setBG() {
     }
 }
 
-function validateEmail() {
+function validateEmail(val) {
     var re = /\S+@\S+\.\S+/; //copied from stackoverflow
-    var val = document.forms["emailValidate"]["emailName"].value;
-    if(val == null || "") {
-        alert("Invalid submission");
-        return false;
-    }
-    else if(re.test(val) == true) {
+    if(val.value.match(re)) {
         alert("Thank you!");
+        return true;
     }
     else {
         alert("Invalid submission");
+        return false;
     } 
+}
+
+function getTitle() {
+    alert("Title: "+document.title);
 }
