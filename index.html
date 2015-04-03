@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-
 <html>
-	<head>
-		<title>Soul Encyclopedia</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="bower_components/angular/angular.min.js"></script>
-		<script src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-		<script src="scripts/app.js"></script>
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="styles/indexcss.css">
-	</head>
+    <head>
+        <title>Blank Site</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="site/css/stylesheet.css">
+            <script src="site/js/a4.js"></script>
+    </head>
 
-	<body>
-		<div class="container" ng-app="app">
-			<div ng-include="'templates/navbar.html'"></div>
-			<div ui-view>change</div>
-			<footer ng-include="'templates/footer.html'"></footer>
-		</div>
-	</body>
+    <body>
+        <div id="navbar">
+            <div id="navbar-left"></div>
+            <ul id="navbar-right">
+                <li class="navelement">
+                    <a class="navlist" href="site/about.html">About Us</a></li>
+                <li class="navelement">
+                    <a class="navlist" href="site/guides.html">Guides</a></li>
+                <li class="navelement">
+                    <a class="navlist" href="site/events.html">Events</a></li>
+                <li class="navelement">
+                    <a class="navlist" href="site/login.html">Login</a></li>
+            </ul>
+        </div>
+        
+        <a class="logo" href="index.html"><img src="site/bg/logo.png" class="logo" alt=""></a>
+        <div class = "right-container">
+	    <input type="button" value="BG cycle" onclick="setBG()"> <input type="button" value="Get Page Title" onclick="getTitle()" /> <p></p>
+            <form name="email" action="#">
+                <input type='text' name='email' placeholder='Join the mailing list'/>
+		<input type="button" value="Validate" onclick="validateEmail(document.email.email)" />
+            </form>
+	</div>
+    </body>
 </html>
